@@ -14,10 +14,10 @@ class Api::V1::SolutionsController < Api::V1::ApplicationController
 
   def set_solve_params
     {
-      a: params[:a].to_i,
-      b: params[:b].to_i,
-      c: params[:c].to_i,
-      d: params[:d].to_i,
+      a: params[:a],
+      b: params[:b],
+      c: params[:c],
+      d: params[:d],
       type: params[:type]
     }
   end
