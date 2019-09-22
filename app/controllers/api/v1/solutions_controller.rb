@@ -10,7 +10,7 @@ class Api::V1::SolutionsController < Api::V1::ApplicationController
     if result.success?
       render json: { result: result.result }, status: :ok
     else
-      render json: { message: result.error }, status: :unprocesable_entity
+      render json: { message: result.error }, status: :unprocessable_entity
     end
   end
 end

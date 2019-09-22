@@ -25,7 +25,7 @@ class GetSolution
         (-context.b + Math.sqrt(discriminant))/(2*context.a).to_f
       ]
     else
-      #комплесные числа не расстаривал в данном случае
+      #комплесные числа не рассматривал в данном случае
       'No solution, because D < 0'
     end
   end 

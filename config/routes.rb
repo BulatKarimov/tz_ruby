@@ -10,4 +10,6 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  match '*path', via: [:options], to: ->(_) { [204, { 'Content-Type' => 'text/plain' }, []] }
 end
