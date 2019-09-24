@@ -1,24 +1,37 @@
 # README
+This is readme for Backend and Frontend task from Bulat Karimov, Kazan.
+I tried to show my actually skills. Unfortunately I cant show you my best with this task.
+Task was simple and small. Maybe if you want I can show you my best at the interview. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TZ Rails API url: https://tzruby.herokuapp.com/
 
-Things you may want to cover:
+- Solution:
 
-* Ruby version
+1. Solve the example
+  url: {base_url}/api/v1/solutions/solve
+  method: POST
 
-* System dependencies
+  required params:
+    1) a (integer)
+    2) b (integer)
+    3) c (integer)
+    4) type (string. 'sqrt' or 'lin')
 
-* Configuration
+SUCCESS:
+  status: 200
+  json: { result: float }
 
-* Database creation
+ERRORS:
+  status: 422
+  json: { message: string }
 
-* Database initialization
+TZ Front web site with layout
 
-* How to run the test suite
+github_repository: https://github.com/BulatKarimov/tz_ruby
 
-* Services (job queues, cache servers, search engines, etc.)
+For quick start:
 
-* Deployment instructions
+1) Clone/download this project from github repository
+2) Open index.html by your web browser (I was testing with Chrome)
+3) Enjoy
 
-* ...
